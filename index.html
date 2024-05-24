@@ -6,33 +6,44 @@
     <title>Skinbarbyash</title>
 
     <!-- CSS Import -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index-styles.css">
+    <link rel="stylesheet" href="css/common.css">
 
     <!-- Poppings Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Beabus New -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img class="logo" src="img/Logo/logo.png" alt="logo.png">
         <nav>
             <ul class="nav_links">
-                <li onclick="aboutScroll()">Home</li>
-                <li onclick="aboutScroll()">About</li>
-                <li onclick="aboutScroll()">Treatment</li>
-                <li onclick="aboutScroll()">Services</li>
-                <li onclick="aboutScroll()">Shop</li>
-                <li onclick="galleryScroll()">Gallery</li>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="treatment.html">Treatment</a>
+                <a href="services.html">Services</a>
+                <a href="shop.html">Shop</a>
+                <a href="gallery.html">Gallery</a>
             </ul>
         </nav>
         <a href="contact.html"><button>Contact Us</button></a>
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
+    <div id="sidebar" class="sidebar">
+        <div class="closebtn">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="services.html">Services</a>
+        <a href="shop.html">Shop</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
     <!-- ---------------------------------------------------- -->
     <div class="landing-page">
         <img class="fade-in-y" src="img/LP/lp.jpg" alt="Landing Page">
@@ -42,20 +53,20 @@
         <div class="lp-main-grid">
             <div class="lp-left">
                 <h1>YOUR FAVE ESTI & <br>FOUNDER OF SKIN BAR BY ASH</h1>
-                <h3 class="fade-in">YOUR SKIN, OUR PASSION</h3>
-                <div class="lp-button-div fade-in-x">
-                    <a href="#"><button class="lp-button">OUR TREATMENT</button></a>
+                <h3>YOUR SKIN, OUR PASSION</h3>
+                <div class="lp-button-div fade-in-x-start">
+                    <a href="#"><button class="lp-button">OUR TREATMENTS</button></a>
                     <a href="#"><button class="lp-button">OUR SERVICES</button></a>
                 </div>
             </div>
-            <div class="lp-right fade-in-x">
+            <div class="lp-right fade-in-x-start">
                 <img src="img/LP/port.png" alt="port.png">
             </div>
         </div>
     </div>
     <!-- ---------------------------------------------------- -->
     <div class="about-page">
-        <div class="ap-main-grid fade-in-x">
+        <div class="ap-main-grid fade-in-x-left">
             <div class="ap-left">
                 <img src="img/page-img/about.jpg" alt="About Image">
             </div>
@@ -81,7 +92,7 @@
     </div>
     <!-- ---------------------------------------------------- -->
     <div class="treatment-page">
-        <div class="tp-main-grid fade-in-x">
+        <div class="tp-main-grid fade-in-x-right">
             <div class="tp-left">
                 <h1 class="page-h1">TREATMENT</h1>
                 <p>
@@ -101,7 +112,7 @@
         </div>
     </div>
     <!-- ---------------------------------------------------- -->
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
     
 </body>
 </html>

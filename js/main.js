@@ -13,7 +13,45 @@ function galleryScroll(){
     const shop_scroll = document.querySelector(".collage-div");
     shop_scroll.scrollIntoView({ behavior: 'smooth' });
 }
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// Sidebar toggle
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.width === '100%') {
+        sidebar.style.width = '0';
+    } else {
+        sidebar.style.width = '100%';
+    }
+}
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// Fade X Start Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in-x-start');
 
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // Fade Y Animation
 document.addEventListener('DOMContentLoaded', () => {
     const faders = document.querySelectorAll('.fade-in-y');
@@ -38,14 +76,15 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 });
-
-// Fade X Animation
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// Fade X  Left Animation
 document.addEventListener('DOMContentLoaded', () => {
-    const faders = document.querySelectorAll('.fade-in-x');
+    const faders = document.querySelectorAll('.fade-in-x-left');
 
     const appearOptions = {
         threshold: 0.1,
-        rootMargin: "0px 0px -200px 0px"
+        rootMargin: "0px 0px -400px 0px"
     };
 
     const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
@@ -63,3 +102,32 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 });
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// Fade X  Right Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in-x-right');
+
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -400px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
+
+
+

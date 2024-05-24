@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Agatho';
+    src: url('../fonts/AgathoLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('../fonts/AgathoRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Fade Animation */
+.fade-in-x-start{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-x-start.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-y{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-y.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-x-left{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-x-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-x-right{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-x-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Header */
+.logo{
+    width: 7vw;
+    margin-right: auto;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100vw;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links a{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.nav_links a:hover{
+    color: #D0B49E;
+}
+
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #D0B49E;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    font-size: 0.9vw;
+}
+
+button:hover{
+    background-color: #F3DBC9;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #D0B49E;
+    transition: background-color 0.3s;
+}
+
+.hamburger:hover .bar {
+    background-color: #F3DBC9;
+}
+
+/* Sidebar */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav_links, button {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #D0B49E;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #F3DBC9;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #D0B49E;
+    cursor: pointer;
+}
