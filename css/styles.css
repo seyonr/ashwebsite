@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Agatho';
+    src: url('../fonts/AgathoLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agatho';
+    src: url('../fonts/AgathoRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Fade Animation */
+.fade-in-y{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-y.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-x{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-x.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Header */
+.logo{
+    width: 7vw;
+    margin-right: auto;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100vw;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: 0.3s all ease-in-out;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.nav_links li:hover{
+    color: #D0B49E;
+}
+
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #D0B49E;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    font-size: 0.9vw;
+}
+
+button:hover{
+    background-color: #F3DBC9;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Landing Page */
+.landing-page {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.landing-page img{
+    width: 100%;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Landing Page 2 */
+.landing-page-2{
+    padding: 30px 10%;
+}
+
+.lp-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lp-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lp-left h1,h3{
+    font-family: 'Agatho';
+    font-weight: 100;
+    text-align: left;
+}
+
+.lp-left h1{
+    font-size: 3vw;
+    line-height: 0.8;
+}
+
+.lp-left h3{
+    padding-top: 20px;
+    font-size: 2.1vw;
+}
+
+.lp-button-div{
+    display: flex;
+    justify-content: left;
+    gap: 10px; 
+    padding-top: 25px;
+}
+
+.lp-button{
+    margin-left: 0px;
+}
+
+.lp-right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.lp-right img{
+    max-width: 100%;
+    max-height: 500px; 
+    object-fit: contain; 
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Template Code */
+.page-h1{
+    font-family: 'Agatho';
+    text-align: center;
+    font-size: 1.9vw;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* About Page */
+.about-page{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+.ap-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ap-left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.ap-left img{
+    max-width: 100%;
+    max-height: 600px; 
+    object-fit: contain;
+}
+
+.ap-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ap-right p{
+    line-height: 2;
+    padding: 25px;
+    text-align: justify;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+.treatment-page{
+    padding: 30px 10%;
+}
+
+.tp-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tp-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tp-left p{
+    line-height: 2;
+    padding: 25px;
+    text-align: justify;
+}
+
+.tp-right{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.tp-right img{
+    max-width: 100%;
+    max-height: 600px; 
+    object-fit: contain;
+}
