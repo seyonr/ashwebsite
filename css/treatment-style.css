@@ -1,0 +1,132 @@
+/* Peel Page */
+.peel-page {
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.peel-page h1 {
+    font-family: 'Agatho';
+    font-size: 2.4vw;
+}
+
+.peel-box-grid{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.peel-box {
+    padding: 20px;
+    background-color: #D0B49E;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+    max-width: 25vw;
+}
+
+.peel-box h3 {
+    font-family: 'Agatho';
+    font-size: 1.7vw;
+    margin: 0;
+}
+
+.hide {
+    text-align: justify;
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, padding-top 0.5s ease-in-out;
+}
+
+.peel-box:hover .hide {
+    opacity: 1;
+    max-height: 2000px; 
+    padding-top: 10px;
+}
+
+.hide h4{
+    font-family: 'Agatho';
+    padding-top: 20px;
+    font-size: 1.3vw;
+}
+
+.hide p{
+    padding-top: 10px;
+}
+
+.benefits-list {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    line-height: 1.6; 
+    list-style: none;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 10px; 
+    text-align: left;
+}
+
+.benefits-list li::before {
+    content: '>'; 
+    position: absolute;
+    left: 0;
+    color: white; 
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Facial Page */
+.facial-page {
+    padding: 30px 10%;
+    background-color: white;
+    text-align: center;
+}
+
+.facial-page h1 {
+    font-family: 'Agatho';
+    font-size: 2.4vw;
+}
+
+.facial-page p{
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.facial-info-grid{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.facial-info{
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.facial-info h4{
+    font-family: 'Agatho';
+    font-size: 1.6vw;
+}
+
+.facial-info p{
+    text-align: left;
+}
+
+.facial-info:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

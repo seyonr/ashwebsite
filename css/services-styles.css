@@ -1,0 +1,31 @@
+.facial-page{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+.facial-page h1{
+    font-family: 'Agatho';
+    color: #D0B49E;
+}
+
+.fp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fp-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fp-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price{
+    color: #D0B49E;
+}
+  
