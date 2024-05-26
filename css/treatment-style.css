@@ -29,7 +29,6 @@
     flex-direction: column;
     justify-content: center;
     min-height: 150px;
-    max-width: 25vw;
 }
 
 .peel-box h3 {
@@ -61,6 +60,7 @@
 
 .hide p{
     padding-top: 10px;
+    text-align: left;
 }
 
 .benefits-list {
@@ -97,7 +97,7 @@
     font-size: 2.4vw;
 }
 
-.facial-page p{
+.prob-p{
     padding-top: 15px;
     text-align: justify;
 }
@@ -123,10 +123,24 @@
 }
 
 .facial-info p{
+    padding-top: 15px;
     text-align: left;
 }
 
 .facial-info:hover{
     transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.facial-box-grid{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.plus{
+    font-size: 1vw;
+    display: inline-block;
+    vertical-align: middle;
 }
