@@ -149,7 +149,11 @@ button:hover{
         padding: 20px;
     }
 
-    .nav_links, button {
+    .nav_links {
+        display: none;
+    }
+
+    .contact-button{
         display: none;
     }
 

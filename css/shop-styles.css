@@ -1,0 +1,47 @@
+.shop-page{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+.shop-page h1{
+    font-family: 'Agatho';
+    text-align: center;
+}
+
+.sp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.store-info{
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.store-info img{
+    max-width: 100%;
+    height: 15vh; 
+    object-fit: contain; 
+}
+
+.store-info a{
+    padding-top: 25px;
+}
+
+.warn{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.warn i{
+    font-family: 'Agatho';
+    font-size: 1.4vw;
+    color: #D0B49E;
+}
