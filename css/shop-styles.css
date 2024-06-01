@@ -1,6 +1,46 @@
-.shop-page{
+.shop-page-land{
     padding: 30px 10%;
     background-color: #FAFAFA;
+}
+
+.shop-page-land h1{
+    font-family: 'Agatho';
+    text-align: center;
+}
+
+.shop-page-land h3{
+    padding-top: 15px;
+}
+
+.shop-page-land p{
+    text-align: justify;
+    padding-top: 15px;
+}
+
+#last-p{
+    padding-top: 0px;
+}
+
+.shop-page-land-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.land-box h4{
+    font-family: 'Agatho';
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.land-box p{
+    text-align: left;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+.shop-page{
+    padding: 30px 10%;
 }
 
 .shop-page h1{
@@ -16,13 +56,34 @@
 }
 
 .store-info{
-    background-color: white;
+    background-color: #D0B49E;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.5s ease-in-out; 
+    min-height: 450px; 
+}
+
+.hide{
+    opacity: 0; 
+    max-height: 0; 
+    overflow: hidden; 
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;  
+}
+
+.store-info:hover{
+    transform: scale(1.03); 
+}
+
+.store-info:hover .hide{
+    opacity: 1; 
+    max-height: 2000px; 
 }
 
 .store-info img{
@@ -31,8 +92,9 @@
     object-fit: contain; 
 }
 
-.store-info a{
-    padding-top: 25px;
+.store-info p{
+    color: black;
+    padding-top: 15px;
 }
 
 .warn{
@@ -45,3 +107,6 @@
     font-size: 1.4vw;
     color: #D0B49E;
 }
+
+
+

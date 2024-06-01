@@ -1,11 +1,12 @@
-.facial-page{
+.darkfacial-page{
     padding: 30px 10%;
     background-color: #FAFAFA;
 }
 
-.facial-page h1{
+h1{
     font-family: 'Agatho';
     color: #D0B49E;
+    font-size: 1.8vw;
 }
 
 .fp-grid{
@@ -14,18 +15,53 @@
 }
 
 .fp-left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.fp-left p{
+    padding-top: 15px;
 }
 
 .fp-right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: right;
+    border-left: 2px solid #D0B49E;
+    padding-left: 20px;
+}
+
+.fp-right p{
+    padding-top: 15px;
 }
 
 .price{
     color: #D0B49E;
 }
-  
+/* ------------------------------ */
+/* ------------------------------ */
+ .whitefacial-page{
+    padding: 30px 10%;
+ } 
+
+ .main-title{
+    font-family: 'Agatho';
+    text-align: center;
+    padding-bottom: 30px;
+ }
+
+ .main-title h1{
+    color: #6A5C50;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 2.5vw;
+ }
+
+ .add-h1{
+    font-size: 1.4vw;
+ }
+
+ .holder{
+    opacity: 0;
+ }
+
+

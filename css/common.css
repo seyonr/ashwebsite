@@ -78,7 +78,6 @@
 header{
     background-color: white;
     display: flex;
-    /* justify-content: flex-end; */
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
@@ -141,6 +140,11 @@ button:hover{
     background-color: #F3DBC9;
 }
 
+.hamburger-button button{
+    margin-left: 0;
+    font-size: 15px;
+}
+
 /* Sidebar */
 @media screen and (max-width: 768px) {
     header {
@@ -196,4 +200,22 @@ button:hover{
     margin-left: 50px;
     color: #D0B49E;
     cursor: pointer;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Footer */
+.footer{
+    padding: 30px 10%;
+    background-color: #D0B49E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
