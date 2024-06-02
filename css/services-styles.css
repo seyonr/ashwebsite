@@ -1,3 +1,19 @@
+/* Main title styling */
+.main-title{
+    font-family: 'Agatho';
+    text-align: center;
+    padding-bottom: 30px;
+ }
+
+.main-title h1{
+    color: #6A5C50;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 40px;
+ }
+/* ------------------------------ */
+/* ------------------------------ */
 .darkfacial-page{
     padding: 30px 10%;
     background-color: #FAFAFA;
@@ -6,7 +22,7 @@
 h1{
     font-family: 'Agatho';
     color: #D0B49E;
-    font-size: 1.8vw;
+    font-size: 32px;
 }
 
 .fp-grid{
@@ -42,22 +58,8 @@ h1{
     padding: 30px 10%;
  } 
 
- .main-title{
-    font-family: 'Agatho';
-    text-align: center;
-    padding-bottom: 30px;
- }
-
- .main-title h1{
-    color: #6A5C50;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 5px;
-    font-size: 2.5vw;
- }
-
  .add-h1{
-    font-size: 1.4vw;
+    font-size: 25px;
  }
 
  .holder{

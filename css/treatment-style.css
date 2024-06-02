@@ -7,7 +7,7 @@
 
 .peel-page h1 {
     font-family: 'Agatho';
-    font-size: 2.4vw;
+    font-size: 32px;
 }
 
 .peel-box-grid{
@@ -33,7 +33,7 @@
 
 .peel-box h3 {
     font-family: 'Agatho';
-    font-size: 1.7vw;
+    font-size: 28px;
     margin: 0;
 }
 
@@ -55,7 +55,7 @@
 .hide h4{
     font-family: 'Agatho';
     padding-top: 20px;
-    font-size: 1.3vw;
+    font-size: 23px;
 }
 
 .hide p{
@@ -94,7 +94,7 @@
 
 .facial-page h1 {
     font-family: 'Agatho';
-    font-size: 2.4vw;
+    font-size: 32px;
 }
 
 .prob-p{
@@ -119,7 +119,7 @@
 
 .facial-info h4{
     font-family: 'Agatho';
-    font-size: 1.6vw;
+    font-size: 28px;
 }
 
 .facial-info p{

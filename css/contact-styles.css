@@ -1,0 +1,98 @@
+/* Contact Page */
+.contact-page{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+.contact-page h1{
+    font-family: 'Agatho';
+    color: #D0B49E;
+    text-align: center;
+    font-size: 32px;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+}
+
+.contact-grid h2{
+    font-family: 'Agatho';
+    text-align: center;
+    font-size: 25px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.button-sizer{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.button-sizer button{
+    margin-left: 0px;
+}
+
+.contact-inputs{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.contact-inputs::placeholder{
+    color: #D0B49E;
+}
+
+textarea{
+    height: 150px;
+}
+
+
+.c-right{
+    text-align: center;
+}
+
+.c-right h3{
+    font-family: 'Agatho';
+    padding-top: 15px;
+}
+
+.c-right a{
+    text-decoration: none;
+    color: #D0B49E;
+    transition: all 0.3s ease-in-out;
+}
+
+.c-right a:hover{
+    color: #F3DBC9;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+.map-page{
+    padding: 30px 10%;
+}
+
+.map-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    transition: all 0.3s ease-in-out;
+}
+
+iframe:hover{
+    transform: scale(1.04);
+}

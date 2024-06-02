@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skinbarbyash</title>
+    
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="css/contact-styles.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- Poppings Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo/logo.png" alt="logo.png">
+        <nav>
+            <ul class="nav_links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="treatment.html">Treatment</a>
+                <a href="services.html">Services</a>
+                <a href="shop.html">Shop</a>
+                <a href="https://www.instagram.com/skinbarbyash?igsh=MXBqNTV3Ym00ZTIybQ%3D%3D&utm_source=qr" target="_blank">Gallery</a>
+            </ul>
+        </nav>
+        <a href="contact.html" class="contact-button"><button>Contact Us</button></a>
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <div class="closebtn" onclick="toggleSidebar()">&times;</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="services.html">Services</a>
+        <a href="shop.html">Shop</a>
+        <a href="https://www.instagram.com/skinbarbyash?igsh=MXBqNTV3Ym00ZTIybQ%3D%3D&utm_source=qr" target="_blank">Gallery</a>
+        <a href="contact.html" class="hamburger-button"><button>Contact Us</button></a>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <div class="contact-page fade-in-x-left">
+        <h1>CONTACT US!</h1>
+        <div class="contact-grid">
+            <div class="c-left">
+                <h2>ONLINE INQURY</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c1ce06b0-19c8-4473-9e24-a8c5268ba04f">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs"></textarea>
+                    <div class="button-sizer"><button type="submit">Sumbit ></button></div>
+                </form>
+            </div>
+
+            <div class="c-right">
+                <h2>CONTACT DETAILS</h2>
+                <h3>EMAIL</h3>
+                <a href="mailto:skinbarbyash@gmail.com">skinbarbyash@gmail.com</a>
+                <h3>ADDRESS</h3>
+                <a href="https://maps.app.goo.gl/q1mnAdk4avxpRePX6" target="_blank">Taunton & Whites, Pickering Ontario</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <div class="map-page fade-in-x-right">
+        <div class="map-holder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.960189665042!2d-79.1390193900239!3d43.87175744062856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d891066c7533%3A0xad2a9f48671b44b!2sTaunton%20Rd%20%26%20Whites%20Rd%20N%2C%20Pickering%2C%20ON%20L0H%201M0!5e0!3m2!1sen!2sca!4v1717273346407!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <div class="footer fade-in-y-footer">
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/skinbarbyash?igsh=MXBqNTV3Ym00ZTIybQ%3D%3D&utm_source=qr" target="_blank"><img src="img/icon/insta.svg" alt="insta.icon"></a>
+            <a href="https://www.tiktok.com/@skinbarbyash?_t=8moJdE7qdjp&_r=1" target="_blank"><img src="img/icon/tiktok.svg" alt="tiktok.icon"></a>
+            <a href="mailto:skinbarbyash@gmail.com"><img src="img/icon/email.svg" alt="email.icon"></a>
+        </div>
+        <div class="footer-p">
+            <p>© 2024 Skin Bar By Ash All Rights Reserved. </p>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------- -->
+    <script defer src="js/main.js"></script>
+    
+</body>
+</html>

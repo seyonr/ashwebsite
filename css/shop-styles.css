@@ -6,6 +6,7 @@
 .shop-page-land h1{
     font-family: 'Agatho';
     text-align: center;
+    font-size: 32px;
 }
 
 .shop-page-land h3{
@@ -15,6 +16,7 @@
 .shop-page-land p{
     text-align: justify;
     padding-top: 15px;
+    font-size: 16px;
 }
 
 #last-p{
@@ -27,16 +29,6 @@
     gap: 20px;
     padding-top: 30px;
 }
-
-.land-box h4{
-    font-family: 'Agatho';
-    text-align: center;
-    font-size: 1.4vw;
-}
-
-.land-box p{
-    text-align: left;
-}
 /* ------------------------------ */
 /* ------------------------------ */
 .shop-page{
@@ -46,6 +38,7 @@
 .shop-page h1{
     font-family: 'Agatho';
     text-align: center;
+    font-size: 32px;
 }
 
 .sp-grid{
@@ -95,6 +88,7 @@
 .store-info p{
     color: black;
     padding-top: 15px;
+    font-size: 16px;
 }
 
 .warn{
@@ -104,7 +98,7 @@
 
 .warn i{
     font-family: 'Agatho';
-    font-size: 1.4vw;
+    font-size: 25px;
     color: #D0B49E;
 }
 

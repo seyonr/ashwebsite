@@ -128,21 +128,48 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 });
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
+// Fade Y  Footer Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in-y-footer');
 
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
 
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
 
-document.addEventListener("DOMContentLoaded", function() {
-    const showInfoBtn = document.querySelector('.show-info');
-    const hideDiv = document.querySelector('.hide');
-
-    showInfoBtn.addEventListener('mouseover', function() {
-        hideDiv.style.opacity = "1"; // Show content when hovering over the button
-    });
-
-    showInfoBtn.addEventListener('mouseout', function() {
-        hideDiv.style.opacity = "0"; // Hide content when mouse leaves the button
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
     });
 });
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const showInfoBtn = document.querySelector('.show-info');
+//     const hideDiv = document.querySelector('.hide');
+
+//     showInfoBtn.addEventListener('mouseover', function() {
+//         hideDiv.style.opacity = "1"; // Show content when hovering over the button
+//     });
+
+//     showInfoBtn.addEventListener('mouseout', function() {
+//         hideDiv.style.opacity = "0"; // Hide content when mouse leaves the button
+//     });
+// });
 
 
 

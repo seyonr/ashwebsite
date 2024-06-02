@@ -18,10 +18,12 @@
 .about-1-left h1{
     font-family: 'Agatho';
     text-align: center;
+    font-size: 32px;
 }
 
 .about-1-left p{
     text-align: justify;
+    font-size: 16px;
 }
 
 .about-1-right{
@@ -44,6 +46,10 @@
 .about-2 h1,h3 {
     font-family: 'Agatho';
     text-align: center;
+}
+
+.about-2 h1{
+    font-size: 32px;
 }
 
 .about-2 h3{

@@ -67,11 +67,22 @@
     opacity: 1;
     transform: translateX(0);
 }
+
+.fade-in-y-footer{
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-y-footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* ------------------------------ */
 /* ------------------------------ */
 /* Header */
 .logo{
-    width: 7vw;
+    width: 120px;
     margin-right: auto;
 }
 
@@ -94,7 +105,7 @@ header{
     transition: 0.3s all ease-in-out;
     text-decoration: none;
     color: black;
-    font-size: 0.9vw;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -112,7 +123,7 @@ button{
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
-    font-size: 0.9vw;
+    font-size: 15px;
 }
 
 button:hover{
@@ -146,7 +157,7 @@ button:hover{
 }
 
 /* Sidebar */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     header {
         flex-direction: row;
         justify-content: space-between;
