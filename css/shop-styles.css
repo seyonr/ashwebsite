@@ -79,15 +79,6 @@
     max-height: 2000px; 
 }
 
-.store-info.active{
-    transform: scale(1.03); 
-}
-
-.store-info.active .hide{
-    opacity: 1; 
-    max-height: 2000px; 
-}
-
 .store-info img{
     max-width: 100%;
     height: 15vh; 
@@ -128,6 +119,24 @@
 
     .store-info.active{
         transform: none; 
+    }
+
+    .store-info:hover{
+        transform: none; 
+    }
+    
+    .store-info:hover .hide{
+        opacity: 0; 
+        max-height: 0; 
+    }
+
+    .store-info.active{
+        transform: scale(1.03); 
+    }
+    
+    .store-info.active .hide{
+        opacity: 1; 
+        max-height: 2000px; 
     }
 }
 
