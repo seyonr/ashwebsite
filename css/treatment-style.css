@@ -185,7 +185,7 @@
         text-align: left;
     }
 
-    .no-fade{
+    #no-fade{
         transform: none;
     }
 }

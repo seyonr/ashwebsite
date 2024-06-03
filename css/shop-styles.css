@@ -101,6 +101,22 @@
     font-size: 25px;
     color: #D0B49E;
 }
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Responsive Code */
+@media screen and (max-width: 1100px) {
+    .sp-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shop-page-land p{
+        text-align: left;
+    }
+}
 
 
 

@@ -96,3 +96,24 @@ iframe{
 iframe:hover{
     transform: scale(1.04);
 }
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Responsive Code */
+@media screen and (max-width: 780px) {
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .c-left{
+        order: 3;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    iframe{
+        height: 375px;
+    }
+}

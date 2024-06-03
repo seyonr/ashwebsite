@@ -14,6 +14,7 @@
  }
 /* ------------------------------ */
 /* ------------------------------ */
+/* Dark Facial Page */
 .darkfacial-page{
     padding: 30px 10%;
     background-color: #FAFAFA;
@@ -54,6 +55,7 @@ h1{
 }
 /* ------------------------------ */
 /* ------------------------------ */
+/* White Facial Page */
  .whitefacial-page{
     padding: 30px 10%;
  } 
@@ -64,6 +66,38 @@ h1{
 
  .holder{
     opacity: 0;
+ }
+ /* ------------------------------ */
+ /* ------------------------------ */
+ /* ------------------------------ */
+ /* ------------------------------ */
+ /* Responsive Code */
+@media screen and (max-width: 780px) {
+    .fp-left p{
+        font-size: 14px;
+    }
+
+    .fp-right p{
+        font-size: 14px;
+    }
+ } 
+
+ @media screen and (max-width: 480px) {
+    .main-title h1{
+        font-size: 30px;
+     }
+
+    .fp-left h1{
+        font-size: 20px;
+    }
+
+    .fp-right h1{
+        font-size: 18px;
+    }
+
+    .add-h1{
+        padding-top: 15px;
+    }
  }
 
 
