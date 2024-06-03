@@ -52,6 +52,12 @@
     padding-top: 10px;
 }
 
+.peel-box.active .hide {
+    opacity: 1;
+    max-height: 2000px; 
+    padding-top: 10px;
+}
+
 .hide h4{
     font-family: 'Agatho';
     padding-top: 20px;

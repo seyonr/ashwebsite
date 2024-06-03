@@ -154,28 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 });
-
-
+// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 function toggleContent(element) {
     element.classList.toggle('active');
 }
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const showInfoBtn = document.querySelector('.show-info');
-//     const hideDiv = document.querySelector('.hide');
-
-//     showInfoBtn.addEventListener('mouseover', function() {
-//         hideDiv.style.opacity = "1"; // Show content when hovering over the button
-//     });
-
-//     showInfoBtn.addEventListener('mouseout', function() {
-//         hideDiv.style.opacity = "0"; // Hide content when mouse leaves the button
-//     });
-// });
-
-
-
-

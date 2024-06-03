@@ -79,6 +79,15 @@
     max-height: 2000px; 
 }
 
+.store-info.active{
+    transform: scale(1.03); 
+}
+
+.store-info.active .hide{
+    opacity: 1; 
+    max-height: 2000px; 
+}
+
 .store-info img{
     max-width: 100%;
     height: 15vh; 
