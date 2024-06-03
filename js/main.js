@@ -156,6 +156,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function toggleContent(element) {
+    element.classList.toggle('active');
+}
+
+
 
 
 // document.addEventListener("DOMContentLoaded", function() {
