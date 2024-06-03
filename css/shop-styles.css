@@ -125,6 +125,10 @@
     .shop-page-land p{
         text-align: left;
     }
+
+    .store-info.active{
+        transform: none; 
+    }
 }
 
 
