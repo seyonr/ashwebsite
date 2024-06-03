@@ -144,3 +144,48 @@
     display: inline-block;
     vertical-align: middle;
 }
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Responsive Code */
+@media screen and (max-width: 1100px) {
+    /* Peel Page */
+    .peel-box-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* Facial Page */
+    .facial-box-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /* Peel Page */
+    .peel-box-grid{
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Facial Page */
+    .facial-info-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .facial-box-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Facial Page */
+    .prob-p{
+        text-align: left;
+    }
+
+    .no-fade{
+        transform: none;
+    }
+}

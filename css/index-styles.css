@@ -34,7 +34,6 @@
 }
 
 .lp-left h1{
-    /* font-size: 3vw; */
     font-size: 50px;
     line-height: 0.8;
 }
@@ -149,4 +148,113 @@
     max-height: 600px; 
     object-fit: contain;
     border-radius: 20px;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Responsive Code */
+@media screen and (max-width: 1100px) {
+    /* About Page */
+    .ap-right p{
+        text-align: left;
+        font-size: 15px;
+    }
+
+
+    /* Treatment Page */
+    .tp-left p{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /* Landing Page */
+    .lp-main-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .lp-left{
+        align-items: center;
+    }
+
+    .lp-left h1,h3{
+        text-align: center;
+    }
+
+    .lp-right{
+        justify-content: center;
+    }
+
+
+    /* About Page */
+    .ap-main-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .ap-left{
+        justify-content: center;
+    }
+    
+    .ap-right{
+        padding-top: 15px;
+    }
+    
+    .ap-right p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+
+    /* Treatment Page */
+    .tp-main-grid{
+        grid-template-columns: 1fr;
+    }
+    
+    .tp-left{
+        order: 3;
+        padding-top: 15px;
+    }
+    
+    .tp-left p{
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    .tp-right{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Landing Page */
+    .lp-left h1{
+        font-size: 30px;
+    }
+
+    .lp-left h3{
+        font-size: 23px;
+    }
+
+    .lp-button-div button{
+        font-size: 12px;
+    }
+
+    .lp-right{
+        padding-top: 15px;
+    }
+
+
+    /* About Page */
+    .ap-right p{
+        text-align: left;
+    }
+
+
+    /* Treatment Page */
+    .tp-left p{
+        text-align: left;
+    }
+
 }

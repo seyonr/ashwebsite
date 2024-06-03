@@ -230,3 +230,10 @@ button:hover{
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    /* Footer */
+    .footer-p p{
+        text-align: center;
+    }
+}
