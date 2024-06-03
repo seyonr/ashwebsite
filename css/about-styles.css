@@ -196,5 +196,37 @@
     .about-box {
         height: 500px;  
     }
+
+    /* Hover Code Change */
+    .about-box:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .about-box:hover p {
+        opacity: 0; 
+        height: 0; 
+    }
+    
+    .about-box:hover h2 {
+        opacity: 0; 
+        height: 0; 
+    }
+    
+    .about-box.active {
+        background-color: #F3DBC9;
+        transform: scale(1.01);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .about-box.active p {
+        opacity: 1; 
+        height: auto; 
+    }
+    
+    .about-box.active h2 {
+        opacity: 0; 
+        height: 0; 
+    }
     
 }
