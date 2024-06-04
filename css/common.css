@@ -31,6 +31,24 @@
     font-weight: 700;
     src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2'); 
   }
+
+  /* Cursive */
+  @font-face {
+    font-family: 'Cursive Serif';
+    src: url('../fonts/CursiveSerif-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cursive Serif';
+    src: url('../fonts/CursiveSerif-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 /* ------------------------------ */
 /* ------------------------------ */
 /* ------------------------------ */

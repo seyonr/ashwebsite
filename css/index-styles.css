@@ -40,7 +40,8 @@
 
 .lp-left h3{
     padding-top: 20px;
-    font-size: 38px;
+    font-size: 34px;
+    font-family: 'Cursive Serif';
 }
 
 .lp-button-div{
@@ -234,7 +235,7 @@
     }
 
     .lp-left h3{
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .lp-button-div button{
