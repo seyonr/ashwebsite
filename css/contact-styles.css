@@ -77,6 +77,10 @@ textarea{
 .c-right a:hover{
     color: #F3DBC9;
 }
+
+span{
+    font-size: 14px;
+}
 /* ------------------------------ */
 /* ------------------------------ */
 .map-page{
